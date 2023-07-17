@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Speisekarte</h1>
+    <h2>Gerichte</h2>
+    <!-- <app-dish [dishname]="meals[0]" [price]="mealPrices[0]"></app-dish>
+    <app-dish [dishname]="meals[1]" [price]="mealPrices[1]"></app-dish>
+    <app-dish [dishname]="meals[2]" [price]="mealPrices[2]"></app-dish> -->
+    <h2>Getränke</h2>
+    <!-- <app-dish [dishname]="beverages[0]" [price]="beveragesPrices[0]"></app-dish>
+    <app-dish [dishname]="beverages[1]" [price]="beveragesPrices[1]"></app-dish>
+    <app-dish [dishname]="beverages[2]" [price]="beveragesPrices[2]"></app-dish>
+    <app-dish [dishname]="beverages[3]" [price]="beveragesPrices[3]"></app-dish> -->
+
+    <app-dish *ngFor="let beverage of beveragesJson; " [dish]="beverage"></app-dish>
+    <!-- beverage = ['Cola','Fanta','Bier','Wein'] -- i = 0,1,2,3 -->
+</div> 
+
